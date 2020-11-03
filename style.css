@@ -253,6 +253,12 @@ html.fp-enabled,
     border-left: 1px solid rgba(0, 0, 0, 1);
 }
 
+.rak-red{
+    border-right: 1px solid #ed4598;
+    border-left: 1px solid #ed4598;
+}
+
+
 
 /* My Code */
 .header {
