@@ -536,3 +536,16 @@ html.fp-enabled,
     font-family: 'Hind Siliguri', sans-serif;
 }
 
+
+
+/* Pong Game */
+#pong{
+    border: 0px solid #FFF;
+    position: absolute;
+    margin :auto;
+    top: 200px;
+    right:0;
+    left:-45px;
+    bottom:0;
+    background-color: #202020 !important;
+}
