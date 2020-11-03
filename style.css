@@ -497,6 +497,10 @@ html.fp-enabled,
     
 }
 
+.btn-right {
+    text-align: right;
+    
+}
 /* Btn round */
 
 .btnVFRond {
