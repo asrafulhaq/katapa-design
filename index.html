@@ -3,6 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Katapub &#8211; Agence créative pour construire votre marque.Logo,site web,vidéo,design,événement&#8230; </title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen background videos." />
@@ -14,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="fonts/katapa/katapub-Rainbow.css" />
 	<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 	<style>
 
 	/* Style for our header texts
@@ -106,6 +108,9 @@
 				</div>
 			</div>
 			<div class="col-md-9">
+				<div class="menu-res">
+					<a href="#">MENU <i class="fa fa-bars"></i></a>
+				</div>
 				<div class="main-menu">
 					<ul>
 						<li><a href="#">Projets</a></li>
@@ -158,7 +163,7 @@
 			<div class="container " style="height:100vh;">
 				
 				<section class="section-content">
-					    <div class="btn-center" style="margin-top: 40%;">
+					    <div class="btn-center btn-bottom-center" style="margin-top: 40%;">
 					    	<a href="#">
 							    <div style="margin-top:450px;" class="buttonNew">       
 							        <div class="button-title">
@@ -228,10 +233,10 @@
 			<div class="container rak-red" style="height:100vh;">
 					
 					
-					<div class="banner-content">
+					<div class="banner-content game-text">
 						<h1 style="margin-top:5vh;font-weight:700;font-size:6.5em; line-height:72px;color:#FFF;">La balle est dans ton camp</h1>
 						<canvas id="pong" width="898" height="400"></canvas>
-						<div style="margin: 40vh auto 0px; width: 172%;" class="btn-right" >
+						<div style="margin: 40vh auto 0px; width: 172%;" class="btn-right game-sec" >
 
 					    	<a href="#">
 							    <div style="" class="buttonNew">       
@@ -246,6 +251,63 @@
 					</div>
 
 				
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="section " id="section0" style="background-color: #FFF;">
+		<div class="layer">
+			<div class="container sec-footer rak-gray" style="height:100vh;">
+					
+					
+					<div class="banner-content ">
+						<h1 style="margin-top:5vh;font-weight:700;font-size:5em; width:64%; line-height:72px;color:#202020;">Par ici pour notre infolettre</h1>
+						
+						
+					</div>
+					<div class="footer-section-content">
+						<div class="footer-1">
+							<h3>ON FAIT LES AVANCES <br />
+							VOUS LES PREMIERS PAS.<br />
+							<a href="#">CONTACT</a></h3>
+						</div>
+						<div class="footer-2">
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#">Projets</a></li>
+									<li><a href="#">Agence</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Job</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+							<div class="social-menu">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="footer-3">
+							<div class="copy-right">
+								<a href="#">
+									<img src="img/katablack.png" alt="">
+								</a>
+								<p>Copyright 2020 Katapub </p>
+							</div>
+						</div>
+					</div>
+
+				
+
+
+
+
 				
 			</div>
 		</div>
@@ -269,14 +331,14 @@
 <script type="text/javascript" src="js/pong.js"></script>
 <script type="text/javascript">
 
-    var myFullpage = new fullpage('#fullpage', { 
-        
-		navigation: true,
+	    var myFullpage = new fullpage('#fullpage', { 
+	        
+			navigation: true,
 
-    });
+	    });
 
 
-    $.fn.parallax = function(resistance, mouse) {
+    	$.fn.parallax = function(resistance, mouse) {
           $el = $(this);
           TweenLite.to($el, 0.2, {
             x: -((mouse.clientX - window.innerWidth / 2) / resistance),
@@ -290,6 +352,11 @@
          });
 
 
+
+        $('.menu-res a').click(function(){
+        	$('.main-menu').toggle(400);
+        	return false;
+        });
 
 
 

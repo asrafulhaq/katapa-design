@@ -258,6 +258,12 @@ html.fp-enabled,
     border-left: 1px solid #ed4598;
 }
 
+.rak-gray{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 /* My Code */
@@ -549,3 +555,133 @@ html.fp-enabled,
     bottom:0;
     background-color: #202020 !important;
 }
+
+
+
+/* Acreen Issue fix */
+
+.btn-bottom-center {
+    position: absolute;
+    bottom: 5vh;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.sec-footer {
+    position: relative;
+}
+
+.footer-section-content .footer-1 h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 24vh;
+    left: -7%;
+    transform: rotate(-90deg);
+}
+
+.footer-section-content .footer-1 h3 a {
+    color: #202020;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+ .footer-1 h3 a:hover {
+    color: #E43889 !important;
+}
+
+
+.footer-section-content .footer-2 {
+    position: absolute;
+    bottom: 11.9vh;
+    left: 30%;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li a:hover {
+    text-decoration: none;
+}
+ 
+
+.footer-section-content .footer-2 .footer-menu ul li a:before {
+    content: '';
+    display: block;
+
+    width: 0px;
+    height: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li a:hover:before {
+    width: 100%;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li:nth-child(1) a:before {
+    background-color: #e43889 !important;
+}
+.footer-section-content .footer-2 .footer-menu ul li:nth-child(2) a:before {
+    background-color: #fbdd1a !important;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li:nth-child(3) a:before {
+    background-color: #40abdd !important;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li:nth-child(4) a:before {
+    background-color: #e43889 !important;
+}
+
+.footer-section-content .footer-2 .footer-menu ul li:nth-child(5) a:before {
+    background-color: #fbdd1a !important;
+}
+
+.footer-section-content .footer-2 .social-menu ul li{
+    display: inline-block;
+}
+
+.footer-section-content .footer-2 .social-menu ul li a {
+    display: inline-block;
+    padding: 0px 4px;
+    transition: .3s;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section-content .footer-2 .social-menu ul li a:hover {
+    color:#E43889 !important;
+}
+
+
+.footer-section-content .footer-3 {
+    position: absolute;
+    bottom: 11.9vh;
+    right: 5%;
+    text-align: right;
+}
+
+.footer-section-content .footer-3 .copy-right a img {
+    width: 120px;
+} 
+
+.footer-section-content .footer-3 .copy-right  p {
+    color: #202020;
+    font-style: italic;
+    font-size: 14px;
+
+}
+
+
